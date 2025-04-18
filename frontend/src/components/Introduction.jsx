@@ -3,9 +3,10 @@ import { useNavigate} from "react-router-dom";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHexagonNodes, faCode, faRobot, faMagic } from "@fortawesome/free-solid-svg-icons";
+import { faUser,  faRocket } from '@fortawesome/free-solid-svg-icons';
 
 const Introduction = () => {
-    const words = ["HexCode", "Think", "Prompt", "Develop"];
+    const words = ["Login", "Input Details", "Generate Portfolio", "Deploy"];
     const [text, setText] = useState("");
     const [index, setIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
@@ -35,19 +36,19 @@ const Introduction = () => {
 
     const features = [
         {
-            icon: faCode,
-            title: "One-Click Generation",
-            description: "Transform your ideas into fully functional websites instantly.",
+            icon: faUser,
+            title: "Form‑Driven Input",
+            description: "Enter your personal details, skills, projects, and achievements across dedicated sections to shape your portfolio blueprint.",
         },
         {
             icon: faRobot,
-            title: "AI-Powered Design",
-            description: "Intelligent layouts that adapt to your unique vision.",
+            title: "AI Prompt Synthesis",
+            description: "Our AI automatically combines your inputs into a structured prompt that guides the entire portfolio build.",
         },
         {
-            icon: faMagic,
-            title: "Seamless Customization",
-            description: "Refine and perfect your design with intuitive AI guidance.",
+            icon: faRocket,
+            title: "Instant Deployment & Export",
+            description: "Generate your live portfolio in one click or download the full HTML, CSS, and JS for self‑hosting or further customization.",
         },
     ];
     const handleScroll = () => {
@@ -75,23 +76,23 @@ const Introduction = () => {
                     </div>
                 </div>
                 <motion.h2
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.5 }}
-                    className="text-xl md:text-4xl text-gray-400 mb-6 font-semibold"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="text-xl md:text-4xl text-gray-400 mb-6 font-semibold"
                 >
-                    The Future of Intelligent Web Development
+                Transform Your Vision into a Professional Portfolio
                 </motion.h2>
 
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7 }}
-                    className="hidden md:block max-w-2xl mx-auto text-base md:text-xl text-gray-600 mb-10"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                className="hidden md:block max-w-2xl mx-auto text-base md:text-xl text-gray-600 mb-10"
                 >
-                    Revolutionize your development workflow with AI-powered website generation. 
-                    Create stunning, responsive designs with unprecedented speed and precision.
+                Fill out your personal details, skills, projects, and achievements, and let our AI craft a beautifully responsive, deployable portfolio in seconds.
                 </motion.p>
+
 
                 <div className="md:grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
                     {features.map((feature, idx) => (
