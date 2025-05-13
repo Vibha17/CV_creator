@@ -221,7 +221,7 @@ Perfect for:
 
 -[@Tejas](https://github.com/Vibha17)
 
--[@Vaishnavi](https://github.com/Vibha17)
+-[@Vaishnavi](https://github.com/VA0910)
 
 
 
