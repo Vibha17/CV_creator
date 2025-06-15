@@ -219,7 +219,7 @@ Perfect for:
 
 -[@Aryan](https://github.com/aryanthepain)
 
--[@Tejas](https://github.com/Vibha17)
+-[@Tejas](https://github.com/tejas615)
 
 -[@Vaishnavi](https://github.com/VA0910)
 
